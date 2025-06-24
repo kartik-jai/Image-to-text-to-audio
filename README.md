@@ -40,25 +40,4 @@ sudo apt-get install tesseract-ocr
 
    The extracted text will be saved as an audio file named `output_audio.mp3`.
 
-## Script Explanation
 
-### Text Extraction
-
-The script uses the `pytesseract` library to extract text from an image:
-
-```python
-result = pytesseract.image_to_string(img)
-```
-
-### Text to Speech Conversion
-
-The script uses the `gtts` library to convert the extracted text to speech and save it as an MP3 file:
-
-```python
-tts = gtts.gTTS(result)
-tts.save("output_audio.mp3")
-```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
